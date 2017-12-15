@@ -1,0 +1,19 @@
+//WAP to check the no. is a power of 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cout<<"enter the number"<<'\n';
+    cin>>a;
+    int y;
+    y=2;
+    while(y<=a){
+        y*=2;
+        
+    }
+    if(y==a)
+        cout<<"It is a power";
+}
+    
+   
