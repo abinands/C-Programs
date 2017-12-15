@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+#include<cmath>
+int length(int x);
+int main()
+{
+    int no,len,a,b,d,arm,i;
+    cout<<"enter the number: "<<'\n';
+    cin>>no;
+    len= length(no);
+    b=a%10;
+    i=0;
+    while(i<=len)
+    {
+        a=no/10;
+        d=a%10;
+        arm+=pow(d,len);
+        i++;
+    }
+    if (no==pow(b,len)+arm)
+    cout<<"it is an armstrong number";
+    else
+    cout<<"It is not armstrong";
+    return 0;
+}
+
+
+
+int length(int x)
+{
+    int count;
+    count=0;
+    while(x>0)
+    {
+        x=x/10;
+        count++;
+    }
+    return count;
+}
