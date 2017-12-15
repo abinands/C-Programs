@@ -1,0 +1,33 @@
+//WAP to check the no. is a power of 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rad,len,bre,base,height,area,ch;
+    cout<<"AREA MENU:  "<<'\n';
+    cout<<"1.Rectangle"<<'\n'<<"2.Triangle"<<'\n'<<"3.Circle"<<'\n';
+    cout<<'\n'<<"enter your chooice"<<'\n';
+    cin>>ch;
+    switch(ch)
+    {
+        case 1:  
+        cout<<"enter the lenght and breadth"<<'\n';
+        cin>>len>>bre;
+        area=len*bre;
+        cout<<"The area of the rectangle is"<<area;
+        case 2:
+        cout<<"Enter the base and height"<<'\n';
+        cin>>base>>height;
+        area=1/2*base*height;
+        cout<<"The area of the triangle is"<<area;
+        case 3:
+        cout<<"Enter the radius"<<'\n';
+        cin>>rad;
+        area=3.14*rad*rad;
+        cout<<"The area of the circle is"<<area;
+        
+    }
+    
+}
+    
+   
