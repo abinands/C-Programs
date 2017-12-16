@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int n,r,candies=0;
+cout<<"Enter the number of children"<<'\n';
+cin>>n;
+cout<<"Enter the rating for each child"<<'\n';
+for(int i=0;i<=n;i++)
+{
+cin>>r;
+candies+=r;
+}
+cout<<"THe number of candies to be given"<<candies;
+}
